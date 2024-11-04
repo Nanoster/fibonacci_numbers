@@ -55,6 +55,7 @@ fn calculate_fibonacci(input: u32){
 
     // println!("{input}번째 피보나치의 수 : {num}");
 
+    // 입력된 위치의 피보나치 수 계산
     let num = match input {
         1 | 2 => 1, // 1번과 2번 피보나치의 수는 1로 동일
         _ => {
@@ -68,5 +69,7 @@ fn calculate_fibonacci(input: u32){
             curr
         }
     };
+    
+    // 피보나치 수 출력
     println!("{input}번째 피보나치의 수 : {num}");
 }
